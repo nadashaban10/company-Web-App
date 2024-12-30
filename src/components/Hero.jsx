@@ -9,11 +9,11 @@ function Hero() {
         
         {/* Text Section (on small screens full width) */}
         <div className='right w-full md:w-[55%] text-center md:text-right mt-8 md:mt-0 '>
-          <h1 className='text-4xl md:text-4xl sm:text-5xl font-bold text-yellow-500'>مرحبا بكم في موقعنا</h1>
+          <h1 className='text-4xl md:text-4xl sm:text-5xl font-bold text-[#f5b225]'>مرحبا بكم في موقعنا</h1>
           <p className='text-xl sm:text-3xl md:text-xl mt-4'>
             موقعنا يقدم لكم افضل الخدمات فنحن نضع سنوات خبراتنا بين يديك لنساعدك كشركاء نجاح.
           </p>
-          <button className='text-white px-4 py-2 rounded-full sm:mt-4 text-xl font-bold mt-5 border border-yellow-500 sm:w-[180px] w-[200px] h-[50px] hover:bg-yellow-500 hover:text-black'>
+          <button className='text-white px-4 py-2 rounded-full sm:mt-4 text-xl font-bold mt-5 border border-[#f5b225] sm:w-[180px] w-[200px] h-[50px] hover:bg-[#f5b225] hover:text-black'>
             اعرف عنا المزيد
           </button>
         </div>

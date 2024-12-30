@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
  .hero , .footer{
-  background: rgb(16,12,88);
-  background: linear-gradient(0deg, rgba(16,12,88,1) 6%, rgba(8,4,82,1) 44%, rgba(82,82,125,0.6783088235294117) 100%);
-}
+  background: rgb(166,139,247);
+background: linear-gradient(0deg, rgba(166,139,247,1) 1%, rgba(108,78,195,1) 44%, rgba(21,13,45,1) 100%);
+ }
 .cardsHover {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; /* Default shadow */
@@ -18,7 +18,7 @@
 .cardsHover:hover {
   
   transform: translateY(-10px) scale(1.05); /* Smooth lift effect */
-  box-shadow: rgba(8,4,82, 0.2) 0px 10px 20px; /* Bottom shadow with greater depth */
+  box-shadow: rgba(108,78,195,0.2) 0px 10px 20px; /* Bottom shadow with greater depth */
   background-color: rgba(255, 255, 255, 0.9); /* Slightly lighter background on hover */
   rotate: 1deg;
   cursor: pointer;
