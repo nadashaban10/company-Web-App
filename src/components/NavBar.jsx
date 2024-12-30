@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { FiPhoneCall } from 'react-icons/fi';
-import { FaBars, FaTimes } from 'react-icons/fa';  // Importing icons for the menu toggle
+import { FaBars } from 'react-icons/fa';  
+import { IoIosCloseCircleOutline } from 'react-icons/io';
 
 function NavBar() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);  // State to toggle mobile menu
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);  
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -12,10 +13,10 @@ function NavBar() {
 
   return (
     <>
-      <div className='navbar flex justify-between items-center text-white mt-5 py-[20px] px-[50px] fixed w-full z-50'>
+      <div className='navbar flex justify-between items-center text-white relative  pt-[30px] sm:pt-[60px] px-[50px]  '>
         {/* Logo Section */}
         <div className='navbarLogo'>
-          <h1 className='text-4xl font-bold'>Logo</h1>
+          <h1 className={`text-4xl font-bold transition-all duration-300 ${isMobileMenuOpen ? 'hidden' : 'block'}`}>Logo </h1>
         </div>
 
         {/* Menu Section (hidden on small screens) */}
@@ -30,7 +31,7 @@ function NavBar() {
         </div>
 
         {/* Contact Section (hidden on small screens) */}
-        <div className='navbarContact flex text-2xl cursor-pointer hidden md:flex'>
+        <div className='navbarContact text-2xl cursor-pointer hidden md:flex'>
           <div className='navbarContactWhatsapp flex items-center bg-[#25D366] text-white p-2 rounded-full mx-3 icon-hover'>
             <FaWhatsapp />
             <a href="https://wa.me/01111111111" target='_blank' rel='noopener noreferrer' className='hover:text-gray-400'></a>
@@ -42,9 +43,12 @@ function NavBar() {
         </div>
 
         {/* Mobile Menu Toggle (Visible on small screens) */}
-        <div className='md:hidden' onClick={toggleMobileMenu}>
+        <div className='md:hidden flex items-center' onClick={toggleMobileMenu}>
           {isMobileMenuOpen ? (
-            <FaTimes className='text-3xl' />
+            <div className='flex items-center justify-between w-[100%] '>
+              <h1 className='text-4xl font-bold pl-[80px]'>Logo</h1> 
+              <IoIosCloseCircleOutline  className='text-[45px]  ' />
+            </div>
           ) : (
             <FaBars className='text-3xl' />
           )}
@@ -52,14 +56,20 @@ function NavBar() {
       </div>
 
       {/* Small Mobile Menu (Visible only when isMobileMenuOpen is true) */}
-      <div className={`smallmenu hero w-[200px] h-[100vh] left-0 fixed z-40 bg-black text-white ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+      <div 
+        className={`smallmenu hero w-[300px] h-[100vh] left-0 fixed z-40  text-white transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}
+      >
         {/* Mobile Menu Items */}
-        <div className='navbarMenuMobile  '>
-          <ul className='flex flex-col space-y-4 px-[30px] py-5 text-2xl mt-[80px] '>
+        <div className='navbarMenuMobile'>
+          <ul className='flex flex-col space-y-3 px-[30px] py-4 text-2xl mt-[100px]'>
             <li><a href="#home" className='line ml-6'>الرئيسيه</a></li>
+            <hr />
             <li><a href="#about" className='line'>من نحن</a></li>
+            <hr />
             <li><a href="#services" className='line'>المدونة</a></li>
+            <hr />
             <li><a href="#services" className='line'>خدماتنا</a></li>
+            <hr />
             <li><a href="#contact" className='line'>تواصل معنا</a></li>
           </ul>
         </div>

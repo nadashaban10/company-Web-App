@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
  .hero{
-  background: rgb(8,4,82);
-  background: linear-gradient(0deg, rgba(8,4,82,1) 0%, rgba(16,9,128,0.9360119047619048) 87%);
+  background: rgb(119,119,219);
+  background: radial-gradient(circle, rgba(119,119,219,1) 0%, rgba(8,4,82,1) 100%);
 }
-
 
 
 /* Vibrate effect */
@@ -46,5 +45,5 @@
 
 body {
   direction: rtl;
-  font-family: 'Noto Naskh Arabic', serif; 
+
 }
