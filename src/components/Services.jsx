@@ -5,7 +5,7 @@ import { MdComputer } from 'react-icons/md';
 function Services() {
   return (
     <div className='flex flex-col items-start justify-center h-auto w-[80%] mx-auto pb-[50px]'>
-      <h1 className='text-3xl font-bold text-yellow-500'>خدماتنا</h1>
+      <h1 className='text-3xl font-bold text-yellow-500 pt-4'>خدماتنا</h1>
       <p className='text-2xl mt-2 text-right text-gray-400'>
         باقة مميزة من الخدمات المختارة
       </p>

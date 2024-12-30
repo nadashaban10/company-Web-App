@@ -51,16 +51,16 @@ function Footer() {
           <h3 className="text-lg font-bold mb-4">تابعنا</h3>
           <div className="flex justify-center space-x-4 space-x-reverse">
             <a href="#" className="hover:opacity-75">
-              <FaFacebook className="w-6 h-6  text-black" />
+              <FaFacebook className="w-6 h-6  text-white" />
             </a>
             <a href="#" className="hover:opacity-75">
               <FaTwitter className="w-6 h-6 text-blue-500" />
             </a>
             <a href="#" className="hover:opacity-75">
-              <FaInstagram className="w-6 h-6 text-pink-900" />
+              <FaInstagram className="w-6 h-6 text-pink-600" />
             </a>
             <a href="#" className="hover:opacity-75">
-              <FaLinkedin className="w-6 h-6 text-white" />
+              <FaLinkedin className="w-6 h-6" />
             </a>
           </div>
         </div>

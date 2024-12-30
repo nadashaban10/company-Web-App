@@ -20,7 +20,7 @@ function NavBar() {
         </div>
 
         {/* Menu Section (hidden on small screens) */}
-        <div className='navbarMenu text-2xl md:text-[22px] hidden md:flex'>
+        <div className='navbarMenu text-2xl md:text-[23px] hidden md:flex'>
           <ul className='flex space-x-8'>
             <li><a href="#home" className='line ml-6'>الرئيسيه</a></li>
             <li><a href="#about" className='line'>من نحن</a></li>

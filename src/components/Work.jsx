@@ -112,7 +112,7 @@ function Work() {
             <div className="absolute left-0 right-0 bottom-0 text-lg font-bold text-white bg-[rgba(8,4,82,0.4)] px-5 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <h2>{project.name}</h2>
               <button className="flex items-center space-x-3">
-                <span>مشاهدة تفاصيل العمل</span>
+                <span className="font-normal">مشاهدة تفاصيل العمل</span>
                 <span className="flex items-center justify-center pt-2 px-1">
                   <FaArrowLeft />
                 </span>
