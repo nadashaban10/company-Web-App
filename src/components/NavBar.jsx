@@ -16,11 +16,11 @@ function NavBar() {
       <div className='navbar flex justify-between items-center text-white relative  pt-[30px] sm:pt-[60px] px-[50px]  '>
         {/* Logo Section */}
         <div className='navbarLogo'>
-          <h1 className={`text-4xl font-bold transition-all duration-300 ${isMobileMenuOpen ? 'hidden' : 'block'}`}>Logo </h1>
+          <h1 className={`text-4xl md:text-[22px] font-bold transition-all duration-300 ${isMobileMenuOpen ? 'hidden' : 'block'}`}>Logo </h1>
         </div>
 
         {/* Menu Section (hidden on small screens) */}
-        <div className='navbarMenu text-2xl hidden md:flex'>
+        <div className='navbarMenu text-2xl md:text-[22px] hidden md:flex'>
           <ul className='flex space-x-8'>
             <li><a href="#home" className='line ml-6'>الرئيسيه</a></li>
             <li><a href="#about" className='line'>من نحن</a></li>
