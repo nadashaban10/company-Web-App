@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ .hero{
+  background: rgb(8,4,82);
+  background: linear-gradient(0deg, rgba(8,4,82,1) 0%, rgba(16,9,128,0.9360119047619048) 87%);
+}
+
+
+
+/* Vibrate effect */
+@keyframes vibrate {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+  100% { transform: translateX(4px); }
+}
+
+.icon-hover:hover {
+  animation: vibrate 0.8s ease infinite;
+  scale: 1.1;
+  background-color: white;
+  color: black;
+}
+
+/* Underline style for links */
+.line {
+  position: relative;
+}
+
+.line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(234 179 8); /* Tailwind's yellow-500 */
+  transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+.line:hover::after {
+  width: 100%; /* Underline the full width of the link */
+}
+
+body {
+  direction: rtl;
+  font-family: 'Noto Naskh Arabic', serif; 
+}

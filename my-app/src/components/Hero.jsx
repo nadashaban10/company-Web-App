@@ -1,0 +1,37 @@
+import React from 'react';
+import heroimage from "../../src/images/heroimage.png";
+
+function Hero() {
+  return (
+    <div className='hero w-full relative pt-[100px]'>
+      {/* Content Section */}
+      <div className='flex flex-col md:flex-row justify-between items-center sm:p-[50px] pt-[40px] px-5 h-[100%] text-white'>
+        
+        {/* Text Section (on small screens full width) */}
+        <div className='right w-full md:w-[50%] text-center md:text-right '>
+          <h1 className='text-5xl sm:text-5xl font-bold text-yellow-500'>مرحبا بكم في موقعنا</h1>
+          <p className='text-3xl sm:text-3xl mt-4'>
+            موقعنا يقدم لكم افضل الخدمات فنحن نضع سنوات خبراتنا بين يديك لنساعدك كشركاء نجاح.
+          </p>
+          <button className='text-white px-4 py-2 rounded-full sm:mt-4 text-xl font-bold mt-5 border border-yellow-500 sm:w-[180px] w-[200px] h-[50px] hover:bg-yellow-500 hover:text-black'>
+            اعرف عنا المزيد
+          </button>
+        </div>
+
+        {/* Image Section (on small screens full width) */}
+        <div className='left w-full md:w-[40%] mt-8 md:mt-0'>
+          <img src={heroimage} alt='hero' className='w-full' />
+        </div>
+      </div>
+
+      {/* Decorative SVG Shape */}
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="white" fillOpacity="1"
+          d="M0,32L80,53.3C160,75,320,117,480,149.3C640,181,800,203,960,176C1120,149,1280,75,1360,37.3L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+  );
+}
+
+export default Hero;
