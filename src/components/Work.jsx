@@ -69,7 +69,7 @@ function Work() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center h-auto w-full mx-auto pb-[50px] bg-gray-50 py-[100px] px-[20px] sm:px-[100px]">
+    <div className="flex flex-col items-center justify-center h-auto w-full mx-auto pb-[50px] bg-[#E7EEFB] py-[100px] px-[20px] sm:px-[100px]">
       {/* Header Section */}
       <div>
         <h1 className="text-3xl font-bold text-yellow-500 text-center">
@@ -88,7 +88,7 @@ function Work() {
             className={`px-4 py-2 rounded-full w-full sm:w-[170px] mb-2 sm:mb-0 ${
               activeButton === button
                 ? "bg-yellow-500 text-white"
-                : "border border-gray-500 text-gray-700 hover:bg-yellow-500 hover:text-white hover:border-none"
+                : "border border-gray-500 text-gray-700 hover:bg-yellow-500 hover:text-white hover:border-none bg-white"
             }`}
             onClick={() => setActiveButton(button)}
           >

@@ -26,7 +26,7 @@ const Contact = () => {
   return (
     <div className="contact h-full w-[100%] flex flex-col lg:flex-row my-5  ">
       {/* Image Section (Hidden on small screens) */}
-      <div className="rightSection  items-center justify-center flex-1  bg-gray-50 rounded-br-[50%] rounded-tl-[50%] py-12 hidden lg:block">
+      <div className="rightSection  items-center justify-center flex-1  bg-white rounded-br-[50%] rounded-tl-[50%] py-12 hidden lg:block">
         <motion.img
           variants={listVariant}
           animate={isInView ? "animate" : "initial"}
@@ -42,7 +42,7 @@ const Contact = () => {
         <div
           variants={listVariant}
           animate={isInView ? "animate" : "initial"}
-          className="w-full flex flex-col gap-5 bg-gray-50 p-12 rounded-xl"
+          className="w-full flex flex-col gap-5 bg-gray-50 bg-opacity-[90%] p-12 rounded-xl"
         >
           <h1 variants={listVariant} className="cTitle text-3xl font-bold text-[rgba(38,89,97,1)]">
             تواصل معنا

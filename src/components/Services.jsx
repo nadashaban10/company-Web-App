@@ -11,7 +11,7 @@ function Services() {
       </p>
       <div className='cards grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-7 justify-center mt-10 cursor-pointer'>
         {/* Card 1 */}
-        <div className='card bg-blue-100 bg-opacity-[70%] shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl  sm:h-[300px]h-[150px] '>
+        <div className='card bg-white  shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl  sm:h-[300px]h-[150px] '>
           <FaPalette className='text-blue-500 text-4xl sm:text-6xl mx-auto mb-2 sm:mb-4' />
           <h2 className='text-lg sm:text-2xl font-bold text-gray-600'>تصميمات الهوية التجارية</h2>
           <p className='hidden sm:block mt-2 sm:mt-4'>عرف عن نفسك بألوان مختارة وخطوط احترافية وأفكار واعية.</p>
@@ -23,7 +23,7 @@ function Services() {
           <p className='hidden sm:block mt-2 sm:mt-4'>الأختيار الأمثل لمن يبحث عن الأرباح الوفيرة.</p>
         </div>
                {/* Card 3 */}
-               <div className='card bg-green-100 bg-opacity-[70%] shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl sm:h-[300px] h-[150px] '>
+               <div className='card bg-green-100 bg-opacity-[90%] shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl sm:h-[300px] h-[150px] '>
           <FaMobileAlt className='text-green-500 text-4xl sm:text-6xl mx-auto mb-2 sm:mb-4' />
           <h2 className='text-lg sm:text-2xl font-bold text-gray-600'>تصميم تطبيقات الجوال</h2>
           <p className='hidden sm:block mt-2 sm:mt-4'>تواجد على مختلف أنظمة الجوالات وزيادة واضحة في عملائك.</p>
