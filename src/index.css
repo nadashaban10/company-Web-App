@@ -5,16 +5,12 @@
   background: rgb(38,89,97);
   background: linear-gradient(0deg, rgba(38,89,97,1) 1%, rgba(23,56,61,1) 44%, rgba(68,116,124,1) 100%);
  }
+ 
 .cardsHover {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; /* Default shadow */
   
 }
-
-
-
-
-
 .cardsHover:hover {
   
   transform: translateY(-10px) scale(1.05); /* Smooth lift effect */
@@ -64,5 +60,6 @@
 
 body {
   direction: rtl;
+  background-color: #E7EEFB;
 
 }
