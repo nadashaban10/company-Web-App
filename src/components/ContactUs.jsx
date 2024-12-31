@@ -39,9 +39,8 @@ const Contact = () => {
       
       {/* Form Section */}
       <div className="leftSection flex items-center justify-center flex-1 mt-5 px-5 sm:w-[95%] md:w-[85%] mx-auto w-[100%] ">
-        <motion.div
-          variants={listVariant}
-          animate={isInView ? "animate" : "initial"}
+        <div
+         
           className="w-full flex flex-col gap-5 bg-gray-50 bg-opacity-[90%] p-12 rounded-xl"
         >
           <h1 variants={listVariant} className="cTitle text-3xl font-bold text-[rgba(38,89,97,1)]">
@@ -80,7 +79,7 @@ const Contact = () => {
           <button variants={listVariant} className="formButton  bg-[rgba(38,89,97,1)]  text-white hover:bg-[rgba(68,116,124,1)] py-4 px-10 rounded-xl cursor-pointer" disabled>
             إرسال
           </button>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

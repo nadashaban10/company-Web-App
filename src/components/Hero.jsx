@@ -13,15 +13,15 @@ function Hero() {
         "شريكك المثالي في النجاح",
          "نواكب تطلعاتك دائمًا",
       ],
-      typeSpeed: 50, // Typing speed
-      backSpeed: 50, // Backspacing speed
-      loop: true, // Loop typing effect
+      typeSpeed: 50, 
+      backSpeed: 50, 
+      loop: true, 
     };
 
-    const typed = new Typed(".typed", options); // Initialize Typed.js
+    const typed = new Typed(".typed", options); 
 
     return () => {
-      typed.destroy(); // Clean up Typed instance to prevent memory leaks
+      typed.destroy(); 
     };
   }, []);
 
