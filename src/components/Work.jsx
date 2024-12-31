@@ -81,7 +81,7 @@ function Work() {
       </div>
 
       {/* Buttons Section */}
-      <div className="flex flex-wrap justify-center mx-5 sm:mx-0 sm:space-x-6 sm:space-x-reverse mt-5">
+      <div className="flex flex-wrap justify-center mx-5 sm:mx-0 sm:space-x-6 sm:space-x-reverse mt-5 md:gap-y-4 ">
         {buttons.map((button, index) => (
           <button
             key={index}
@@ -102,14 +102,14 @@ function Work() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="group border border-gray-300 rounded-3xl shadow-md cardsHover relative p-3"
+            className="group rounded-3xl shadow-md cardsHover relative p-3"
           >
             <img
               src={project.image}
               alt={project.name}
               className="w-full h-40 object-cover rounded-md"
             />
-            <div className="absolute left-0 right-0 bottom-0 text-lg font-bold text-white bg-[rgba(8,4,82,0.4)] px-5 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute left-0 right-0 bottom-0 text-lg font-bold text-white bg-[rgba(8,4,82,0.4)] px-5 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-3xl">
               <h2>{project.name}</h2>
               <button className="flex items-center space-x-3">
                 <span className="font-normal">مشاهدة تفاصيل العمل</span>

@@ -38,7 +38,7 @@ const Contact = () => {
       </div>
       
       {/* Form Section */}
-      <div className="leftSection flex items-center justify-center flex-1 mt-5 px-5 sm:w-[90%] ">
+      <div className="leftSection flex items-center justify-center flex-1 mt-5 px-5 sm:w-[95%] md:w-[85%] mx-auto w-[100%] ">
         <div
           variants={listVariant}
           animate={isInView ? "animate" : "initial"}
@@ -54,7 +54,7 @@ const Contact = () => {
               name="user_username"
               placeholder="Nada Shaban"
               className="p-3 rounded-md border-none"
-              disabled
+            
             />
           </div>
           <div variants={listVariant} className="formItem flex flex-col gap-2">
@@ -64,7 +64,7 @@ const Contact = () => {
               name="user_email"
               placeholder="nadashapann@gmail.com"
               className="p-3 rounded-md border-none"
-              disabled
+             
             />
           </div>
           <div variants={listVariant} className="formItem flex flex-col gap-2">
@@ -74,7 +74,7 @@ const Contact = () => {
               name="user_message"
               placeholder="اكتب رسالتك..."
               className="p-3 rounded-md border-none"
-              disabled
+            
             ></textarea>
           </div>
           <button variants={listVariant} className="formButton  bg-[rgba(38,89,97,1)]  text-white hover:bg-[rgba(68,116,124,1)] py-4 px-10 rounded-xl cursor-pointer" disabled>

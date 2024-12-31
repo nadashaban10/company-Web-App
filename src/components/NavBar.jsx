@@ -13,20 +13,20 @@ function NavBar() {
 
   return (
     <>
-      <div className="navbar flex justify-between items-center text-white relative pt-[30px] sm:pt-[60px] px-[50px]">
+      <div className="navbar flex justify-between items-center text-white relative pt-[30px] sm:pt-[60px] px-[50px] md:px-[20px]">
         {/* Logo Section */}
-        <div className="navbarLogo">
-          <h1 className={`text-4xl md:text-[22px] font-bold transition-all duration-300 ${isMobileMenuOpen ? 'hidden' : 'block'}`}>Logo</h1>
+        <div className="navbarLogo ">
+          <h1 className={`text-4xl md:text-[23px] font-bold transition-all duration-300 mt-[-13px] ${isMobileMenuOpen ? 'hidden' : 'block'}`}>Logo</h1>
         </div>
 
         {/* Menu Section (hidden on small screens) */}
-        <div className="navbarMenu text-2xl md:text-[23px] hidden md:flex">
+        <div className="navbarMenu text-2xl md:text-[20px] hidden md:flex">
           <ul className="flex space-x-8">
-            <li><a href="#home" className="line ml-6 py-3">الرئيسيه</a></li>
-            <li><a href="#about" className="line ml-6 py-3">من نحن</a></li>
-            <li><a href="#services" className="line ml-6 py-3">المدونة</a></li>
-            <li><a href="#services" className="line ml-6 py-3">خدماتنا</a></li>
-            <li><a href="#contact" className="line ml-6 py-3">تواصل معنا</a></li>
+            <li><a href="#home" className="line ml-[40px] md:ml-[30px] py-3">الرئيسيه</a></li>
+            <li><a href="#about" className="line ml-2 py-3">من نحن</a></li>
+            <li><a href="#services" className="line ml-2 py-3">المدونة</a></li>
+            <li><a href="#services" className="line ml-2 py-3">خدماتنا</a></li>
+            <li><a href="#contact" className="line ml-2 py-3">تواصل معنا</a></li>
           </ul>
         </div>
 

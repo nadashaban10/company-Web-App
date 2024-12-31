@@ -17,30 +17,30 @@ function Footer() {
         
         {/* First Section: Logo and Description */}
         <div className="w-full text-center lg:w-1/3 lg:mr-[20px] lg:text-right flex flex-col items-center lg:items-start">
-          <h1 className="mb-4 w-32">Logo</h1>
-          <p className="text-sm leading-loose px-4 lg:px-0 text-center lg:text-right">
+          <h1 className="mb-4 w-32 md:text-4xl sm:text-lg lg:text-2xl">Logo</h1>
+          <p className="sm:text-sm leading-loose px-4 lg:px-0 text-center lg:text-right md:text-lg lg:text-sm">
             وعي استثنائي برغبتك في الحصول على خدمة فريدة عبر فريق عمل من المحترفين. نقدم خدمات متكاملة مثل استضافة المواقع، الدعم الفني، الإدارة، تصميم المتاجر، والتسويق الإلكتروني وبالتأكيد تصميم الهوية التجارية وبرمجة تطبيقات الجوال والمواقع الإلكترونية. كل هذا بإحترافية يشهد عليها عملائنا.
           </p>
         </div>
 
         {/* Second Section: Contact Information */}
         <div className="w-full text-center lg:w-1/4 lg:mr-[150px] lg:text-left flex flex-col items-center lg:items-start space-y-5">
-          <h3 className="text-lg font-bold">معلومات التواصل</h3>
-          <div className="space-y-3">
+          <h3 className="text-lg md:text-2xl font-bold lg:text-sm">معلومات التواصل</h3>
+          <div className="space-y-3 md:text-xl lg:text-sm">
             <a href="https://wa.me/your-number" className="flex items-center justify-center lg:justify-start">
-              <FaWhatsapp className="w-5 h-5 ml-2 text-green-500" />
+              <FaWhatsapp className="w-5 h-5 ml-2 text-green-500 lg:w-4 lg:h-4" />
               WhatsApp
             </a>
             <p className="flex items-center justify-center lg:justify-start">
-              <FaMapMarkerAlt className="w-5 h-5 ml-2 text-red-500" />
+              <FaMapMarkerAlt className="w-5 h-5 ml-2 text-red-500 lg:w-4 lg:h-4" />
               العنوان: شارع الرئيسية
             </p>
             <a href="tel:+123456789" className="flex items-center justify-center lg:justify-start">
-              <FaPhone className="w-5 h-5 ml-2 text-blue-500" />
+              <FaPhone className="w-5 h-5 ml-2 text-blue-500 lg:w-4 lg:h-4" />
               الهاتف: +123456789
             </a>
             <a href="mailto:info@example.com" className="flex items-center justify-center lg:justify-start">
-              <FaEnvelope className="w-5 h-5 ml-2 text-white" />
+              <FaEnvelope className="w-5 h-5 ml-2 text-white lg:w-4 lg:h-4" />
               البريد الإلكتروني: info@example.com
             </a>
           </div>
@@ -48,26 +48,26 @@ function Footer() {
 
         {/* Third Section: Social Icons */}
         <div className="w-full text-center lg:w-1/3 flex flex-col items-center">
-          <h3 className="text-lg font-bold mb-4">تابعنا</h3>
-          <div className="flex justify-center space-x-4 space-x-reverse">
+          <h3 className="text-lg md:text-2xl font-bold mb-4 lg:text-sm">تابعنا</h3>
+          <div className="flex justify-center space-x-4 space-x-reverse md:text-xl lg:text-sm">
             <a href="#" className="hover:opacity-75">
-              <FaFacebook className="w-6 h-6  text-white" />
+              <FaFacebook className="w-6 h-6 text-white lg:w-5 lg:h-5" />
             </a>
             <a href="#" className="hover:opacity-75">
-              <FaTwitter className="w-6 h-6 text-blue-500" />
+              <FaTwitter className="w-6 h-6 text-blue-500 lg:w-5 lg:h-5" />
             </a>
             <a href="#" className="hover:opacity-75">
-              <FaInstagram className="w-6 h-6 text-pink-600" />
+              <FaInstagram className="w-6 h-6 text-pink-600 lg:w-5 lg:h-5" />
             </a>
             <a href="#" className="hover:opacity-75">
-              <FaLinkedin className="w-6 h-6" />
+              <FaLinkedin className="w-6 h-6 lg:w-5 lg:h-5" />
             </a>
           </div>
         </div>
       </div>
 
       {/* Copyright Section */}
-      <div className="text-center text-sm text-white mt-10 bg-gray-400 bg-opacity-20 sm:w-[400px] w-[300px] flex justify-center items-center h-10 mx-auto rounded-full">
+      <div className="text-center text-sm text-white md:text-xl mt-10 bg-gray-400 bg-opacity-20 sm:w-[400px] w-[300px] flex justify-center items-center h-10 mx-auto rounded-full">
         <p>&copy; {new Date().getFullYear()} جميع الحقوق محفوظة</p>
       </div>
     </footer>

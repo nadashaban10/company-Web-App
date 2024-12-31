@@ -18,7 +18,7 @@
 .cardsHover:hover {
   
   transform: translateY(-10px) scale(1.05); /* Smooth lift effect */
-  box-shadow: rgba(108,78,195,0.2) 0px 10px 20px; /* Bottom shadow with greater depth */
+  box-shadow: rgba(8,4,82) 0px 10px 30px; /* Bottom shadow with greater depth */
   background-color: rgba(255, 255, 255, 0.9); /* Slightly lighter background on hover */
   rotate: 1deg;
   cursor: pointer;
