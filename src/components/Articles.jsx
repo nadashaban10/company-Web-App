@@ -4,8 +4,30 @@ import img2 from '../images/Web-Development.png';
 import img3 from '../images/Web-Development.png';
 import { BsArrowDown } from 'react-icons/bs';
 import { IoEyeOutline } from 'react-icons/io5';
+import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
+const listVariant = {
+  initial: {
+    x: 100,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      staggerChildren: 0.2,
+    },
+  },
+};
 function Articles() {
+
+  const ref = useRef();
+  const isInView = useInView(ref);
+
+  
   const articles = [
     {
       id: 1,
@@ -37,7 +59,10 @@ function Articles() {
   ];
 
   return (
-    <div className='articles flex flex-col items-start justify-center h-full w-[80%] mx-auto pb-[50px]'>
+    <motion.div className='articles flex flex-col items-start justify-center h-full w-[80%] mx-auto pb-[50px]'
+        variants={listVariant}
+          animate={isInView ? "animate" : "initial"}
+          ref={ref}>
       <h2 className='text-3xl font-bold text-yellow-500 pt-4'>المقالات</h2>
       <p className='text-2xl mt-2 text-right text-gray-400'>
         مقالات متنوعة تهمك في عالم تطوير الويب
@@ -45,6 +70,7 @@ function Articles() {
       <div className='cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-7 justify-center mt-10 cursor-pointer'>
         {articles.map(article => (
           <div key={article.id} className='card bg-white shadow-md rounded-3xl p-4 sm:p-6 text-right transform transition duration-300 hover:scale-105 hover:shadow-xl relative sm:h-[450px] h-[450px]'>
+         
             <div className='relative'>
               <img src={article.img} alt={article.title} className='w-full h-40 object-cover rounded-md ' />
               {/* Overlay Layer */}
@@ -68,7 +94,7 @@ function Articles() {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
