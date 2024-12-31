@@ -1,11 +1,76 @@
-import React from 'react'
+import React from 'react';
+import img1 from '../images/Web-Development.png';
+import img2 from '../images/Web-Development.png';
+import img3 from '../images/Web-Development.png';
+import { BsArrowDown } from 'react-icons/bs';
+import { IoEyeOutline } from 'react-icons/io5';
 
 function Articles() {
+  const articles = [
+    {
+      id: 1,
+      img: img1,
+      date: '2021-10-10',
+      title: 'تعرف على أساسيات تطوير الويب',
+      description: 'مقال يتحدث عن أهم الخطوات لتعلم تطوير الويب وأساسيات العمل عليه لتحقيق نتائج احترافية في مشاريعك القادمة.',
+      views: 120,
+      color: 'bg-red-500 bg-opacity-40'
+    },
+    {
+      id: 2,
+      img: img2,
+      date: '2021-10-11',
+      title: 'أدوات وتقنيات حديثة في تصميم المواقع',
+      description: 'نستعرض في هذا المقال أهم الأدوات والتقنيات التي تساعدك على تصميم مواقع تفاعلية وجذابة بأحدث الأساليب.',
+      views: 85,
+      color: 'bg-blue-500 bg-opacity-40'
+    },
+    {
+      id: 3,
+      img: img3,
+      date: '2021-10-12',
+      title: 'كيفية تحسين أداء مواقع الويب',
+      description: 'مقال متخصص في شرح طرق تحسين سرعة وأداء المواقع الإلكترونية للحصول على تجربة مستخدم أفضل.',
+      views: 190,
+      color: 'bg-green-500 bg-opacity-40'
+    }
+  ];
+
   return (
-    <div>
-      
+    <div className='articles flex flex-col items-start justify-center h-full w-[80%] mx-auto pb-[50px]'>
+      <h2 className='text-3xl font-bold text-yellow-500 pt-4'>المقالات</h2>
+      <p className='text-2xl mt-2 text-right text-gray-400'>
+        مقالات متنوعة تهمك في عالم تطوير الويب
+      </p>
+      <div className='cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-7 justify-center mt-10 cursor-pointer'>
+        {articles.map(article => (
+          <div key={article.id} className='card bg-gray-100 bg-opacity-[70%] shadow-md rounded-3xl p-4 sm:p-6 text-right transform transition duration-300 hover:scale-105 hover:shadow-xl relative sm:h-[450px] h-[450px]'>
+            <div className='relative'>
+              <img src={article.img} alt={article.title} className='w-full h-40 object-cover rounded-md ' />
+              {/* Overlay Layer */}
+              <div className={`absolute inset-0 rounded-md ${article.color}`}></div>
+            </div>
+            <h2 className='text-lg sm:text-xl font-bold text-slate-700  hover:text-[rgba(38,89,97,1)] mt-4'>{article.title}</h2>
+            <div className='flex items-center justify-start gap-2 text-lg space-x-5 text-gray-400 mt-2'>
+              <span className='pl-5'>{article.date}</span>
+              <span className='flex items-center gap-1'>
+                <IoEyeOutline  className='text-gray-500 ml-2 ' />
+                {article.views}
+              </span>
+            </div>
+            <p className=' sm:block mt-2 sm:mt-2 text-gray-500'>{article.description}</p>
+            <div className='flex items-center  text-[rgba(38,89,97,1)] justify-center gap-2 absolute bottom-4 font-semibold left-3 w-[180px] px-4 py-2 bg-gray-200 text-center rounded-full hover:bg-[rgba(38,89,97,1)] hover:text-white'>
+              <button className=''>
+                عرض المزيد
+              </button>
+              <BsArrowDown className='rotate-90 text-lg mt-1 ' />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
-  )
+  );
 }
 
-export default Articles
+export default Articles;
+

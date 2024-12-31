@@ -67,7 +67,7 @@ function Footer() {
       </div>
 
       {/* Copyright Section */}
-      <div className="text-center text-sm text-gray-900 mt-10">
+      <div className="text-center text-sm text-white mt-10 bg-gray-400 bg-opacity-20 sm:w-[400px] w-[300px] flex justify-center items-center h-10 mx-auto rounded-full">
         <p>&copy; {new Date().getFullYear()} جميع الحقوق محفوظة</p>
       </div>
     </footer>
