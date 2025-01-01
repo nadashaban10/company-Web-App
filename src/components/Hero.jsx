@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import heroimage from "../images/heroimage.png";
 import Typed from "typed.js";
-
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import animition from "../Animation2.json";
 function Hero() {
   useEffect(() => {
     const options = {
@@ -48,7 +49,14 @@ function Hero() {
 
         {/* Image Section */}
         <div className="left w-full md:w-[40%] mt-8 md:mt-0">
-          <img src={heroimage} alt="hero" className="w-full" />
+        <Player
+  autoplay
+  loop
+  src={animition}
+  style={{ height: '330px', width: '330px' }}
+>
+  <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+</Player>
         </div>
       </div>
 

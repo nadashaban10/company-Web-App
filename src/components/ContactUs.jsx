@@ -20,7 +20,6 @@ const listVariant = {
 
 const Contact = () => {
   const ref = useRef();
-
   const isInView = useInView(ref);
 
   return (
