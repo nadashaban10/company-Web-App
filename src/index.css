@@ -20,7 +20,7 @@ body {
 }
 .backgroundshape {
   background-color: #e5e5f7;
-  opacity: 0.03;
+  opacity: 0.05;
   background-image: radial-gradient(circle at center center, #444cf7, #e5e5f7), repeating-radial-gradient(circle at center center, #444cf7, #444cf7, 30px, transparent 60px, transparent 30px);
   background-blend-mode: multiply;
   position: absolute;  /* Position it inside the card */
