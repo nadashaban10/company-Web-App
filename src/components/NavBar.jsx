@@ -37,7 +37,7 @@ function NavBar() {
       >
         <div className="navbarLogo">
           <h1
-            className={`text-4xl md:text-[23px] font-bold transition-all duration-300 mt-[-13px] ${isMobileMenuOpen ? "hidden" : "block"}`}
+            className={`text-4xl md:text-[23px] font-bold transition-all duration-300 mt-[-10px] ${isMobileMenuOpen ? "hidden" : "block"}`}
             aria-hidden={isMobileMenuOpen ? "true" : "false"}
           >
             Logo

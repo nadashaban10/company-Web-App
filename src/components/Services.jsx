@@ -78,6 +78,7 @@ function Services() {
           role="region"
           aria-labelledby="identity-design"
         >
+              <div className="backgroundshape"></div>
           <FaPalette
             className="text-blue-500 text-4xl sm:text-6xl mx-auto mb-2 sm:mb-4"
             aria-label="Palette Icon"
@@ -88,6 +89,7 @@ function Services() {
           <p className="hidden sm:block mt-2 sm:mt-4" aria-hidden="true">
             عرف عن نفسك بألوان مختارة وخطوط احترافية وأفكار واعية.
           </p>
+      
         </motion.div>
         {/* Card 2 */}
         <motion.div
@@ -96,6 +98,7 @@ function Services() {
           role="region"
           aria-labelledby="ecommerce-design"
         >
+                <div className="backgroundshape"></div>
           <FaStore
             className="text-yellow-500 text-4xl sm:text-6xl mx-auto mb-2 sm:mb-4"
             aria-label="Store Icon"
@@ -115,6 +118,7 @@ function Services() {
           role="region"
           aria-labelledby="tech-consulting"
         >
+                <div className="backgroundshape"></div>
           <TbReportSearch
             className="text-black text-4xl sm:text-6xl mx-auto mb-2 sm:mb-4"
             aria-label="Search Icon"
@@ -134,6 +138,7 @@ function Services() {
           role="region"
           aria-labelledby="mobile-app-design"
         >
+                <div className="backgroundshape"></div>
           <FaMobileAlt
             className="text-green-500 text-4xl sm:text-6xl mx-auto mb-2 sm:mb-4"
             aria-label="Mobile Icon"
@@ -153,6 +158,7 @@ function Services() {
           role="region"
           aria-labelledby="maintenance"
         >
+                <div className="backgroundshape"></div>
           <CiSettings
             className="text-red-500 text-4xl sm:text-6xl mx-auto mb-2 sm:mb-4"
             aria-label="Settings Icon"
