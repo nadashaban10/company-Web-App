@@ -37,8 +37,8 @@ function Hero() {
             مرحبا بكم في موقعنا
           </h2>
           {/* Typing Animation */}
-          <h1 className="text-2xl md:text-3xl sm:text-4xl font-bold text-[#f5b225] pr-1">
-            <span className="typed"></span> {/* Dynamic text will appear here */}
+          <h1 className="text-2xl md:text-3xl sm:text-4xl font-bold text-[#f5b225] pr-1 space-y-2 ">
+            <span className="typed text-shadow-md"></span> {/* Dynamic text will appear here */}
           </h1>
           <p className="text-xl sm:text-3xl md:text-xl mt-3">
             موقعنا يقدم لكم افضل الخدمات فنحن نضع سنوات خبراتنا بين يديك لنساعدك كشركاء نجاح.

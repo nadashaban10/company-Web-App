@@ -15,6 +15,9 @@ body {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; /* Default shadow */
   
 }
+.text-shadow-md {
+  text-shadow: 2px 2px 8px rgba(255, 204, 51, 0.3);
+}
 .backgroundshape {
   
   background-color: #e5e5f7;
