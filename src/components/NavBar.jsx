@@ -36,7 +36,7 @@ function NavBar() {
         role="navigation"
         aria-label="Main Navigation"
       >
-        <div className="navbarLogo w-[40px] md:w-[50px] cursor-pointer" >
+        <div className="navbarLogo w-[140px] md:w-[100px] cursor-pointer" >
           <img  src={Logoo} alt='logo'
             className={`text-4xl md:text-[23px] font-bold transition-all duration-300 mt-[5px] mx-5 mb-2 ${isMobileMenuOpen ? "hidden" : "block"}`}
             aria-hidden={isMobileMenuOpen ? "true" : "false"}
@@ -101,7 +101,7 @@ function NavBar() {
       >
         <div className="flex flex-col">
           <div className="flex justify-between items-center px-4 py-2">
-          <img src={Logoo} alt='logo' className='w-[45px] mx-5'
+          <img src={Logoo} alt='logo' className='w-[100px] mx-5'
              
             />
             <IoIosCloseCircleOutline
