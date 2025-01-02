@@ -67,7 +67,7 @@ function Articles() {
       <p className='text-2xl mt-2 text-right text-gray-400'>
         مقالات متنوعة تهمك في عالم تطوير الويب
       </p>
-      <div className='cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-7 justify-center mt-10 cursor-pointer'>
+      <div className='cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-7 justify-center mt-10 cursor-pointer space-y-5'>
         {articles.map(article => (
           <div key={article.id} className='card bg-white shadow-md rounded-3xl p-3 sm:p-3 text-right transform transition duration-300 hover:scale-105 hover:shadow-xl relative sm:h-[450px] h-[450px]'>
          
