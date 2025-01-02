@@ -36,6 +36,7 @@ function Hero() {
           <h2 className="text-4xl md:text-5xl font-semibold text-[#f5b225] mb-2">
             مرحبا بكم في موقعنا
           </h2>
+        
           {/* Typing Animation */}
           <h1 className="text-2xl md:text-3xl sm:text-4xl font-bold text-[#f5b225] pr-1 space-y-2 ">
             <span className="typed text-shadow-md"></span> {/* Dynamic text will appear here */}
