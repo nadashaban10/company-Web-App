@@ -23,59 +23,66 @@ const Contact = () => {
   const isInView = useInView(ref);
 
   return (
-    <div className="contact h-full w-[100%] flex flex-col lg:flex-row my-5  ">
+    <div className="contact h-full w-[100%] flex flex-col lg:flex-row my-5">
       {/* Image Section (Hidden on small screens) */}
-      <div className="rightSection  items-center justify-center flex-1  bg-white rounded-br-[50%] rounded-tl-[50%] py-12 hidden lg:block">
+      <div className="rightSection items-center justify-center flex-1 bg-white rounded-br-[50%] rounded-tl-[50%] py-12 hidden lg:block">
         <motion.img
           variants={listVariant}
           animate={isInView ? "animate" : "initial"}
           ref={ref}
           src={Contactimg}
           alt="اتصل بنا"
-          className="rounded-xl w-[600px] pt-[90px] h-auto pr-10" 
+          className="rounded-xl w-[600px] pt-[90px] h-auto pr-10"
+          role="img"
+          aria-label="Image showing contact us"
         />
       </div>
-      
+
       {/* Form Section */}
-      <div className="leftSection flex items-center justify-center flex-1 mt-5 px-5 sm:w-[95%] md:w-[85%] mx-auto w-[100%] ">
-        <div
-         
-          className="w-full flex flex-col gap-5 bg-gray-50 bg-opacity-[90%] p-12 rounded-xl"
-        >
+      <div className="leftSection flex items-center justify-center flex-1 mt-5 px-5 sm:w-[95%] md:w-[85%] mx-auto w-[100%]">
+        <div className="w-full flex flex-col gap-5 bg-gray-50 bg-opacity-[90%] p-12 rounded-xl">
           <h1 variants={listVariant} className="cTitle text-3xl font-bold text-[rgba(38,89,97,1)]">
             تواصل معنا
           </h1>
           <div variants={listVariant} className="formItem flex flex-col gap-2">
-            <label className="text-sm">الاسم</label>
+            <label htmlFor="username" className="text-sm">الاسم</label>
             <input
+              id="username"
               type="text"
               name="user_username"
               placeholder="Nada Shaban"
               className="p-3 rounded-md border-none"
-            
+              aria-label="Enter your name"
             />
           </div>
           <div variants={listVariant} className="formItem flex flex-col gap-2">
-            <label className="text-sm">البريد الإلكتروني</label>
+            <label htmlFor="email" className="text-sm">البريد الإلكتروني</label>
             <input
+              id="email"
               type="email"
               name="user_email"
               placeholder="nadashapann@gmail.com"
               className="p-3 rounded-md border-none"
-             
+              aria-label="Enter your email"
             />
           </div>
           <div variants={listVariant} className="formItem flex flex-col gap-2">
-            <label className="text-sm">الرسالة</label>
+            <label htmlFor="message" className="text-sm">الرسالة</label>
             <textarea
+              id="message"
               rows={10}
               name="user_message"
               placeholder="اكتب رسالتك..."
               className="p-3 rounded-md border-none"
-            
+              aria-label="Enter your message"
             ></textarea>
           </div>
-          <button variants={listVariant} className="formButton  bg-[rgba(38,89,97,1)]  text-white hover:bg-[rgba(68,116,124,1)] py-4 px-10 rounded-xl cursor-pointer" disabled>
+          <button
+            variants={listVariant}
+            className="formButton bg-[rgba(38,89,97,1)] text-white hover:bg-[rgba(68,116,124,1)] py-4 px-10 rounded-xl cursor-pointer"
+            disabled
+            aria-disabled="true"
+          >
             إرسال
           </button>
         </div>
