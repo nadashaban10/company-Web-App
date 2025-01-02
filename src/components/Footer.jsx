@@ -9,7 +9,7 @@ import {
   FaInstagram,
   FaLinkedin,
 } from 'react-icons/fa';
-import Logoo from '../images/logo.png';
+import Logoo from '../images/Logo.png';
 
 function Footer() {
   return (
@@ -18,7 +18,7 @@ function Footer() {
         
         {/* First Section: Logo and Description */}
         <div className="w-full text-center lg:w-1/3 lg:mr-[20px] lg:text-right flex flex-col items-center lg:items-start">
-         <img  src={Logoo} alt='logo' className='w-[40px] md:w-[50px]'/>
+         <img  src={Logoo} alt='logo' className='w-[120px] md:w-[100px]'/>
           <p className="sm:text-sm leading-loose px-4 lg:px-0 text-center lg:text-right md:text-lg lg:text-sm">
             وعي استثنائي برغبتك في الحصول على خدمة فريدة عبر فريق عمل من المحترفين. نقدم خدمات متكاملة مثل استضافة المواقع، الدعم الفني، الإدارة، تصميم المتاجر، والتسويق الإلكتروني وبالتأكيد تصميم الهوية التجارية وبرمجة تطبيقات الجوال والمواقع الإلكترونية. كل هذا بإحترافية يشهد عليها عملائنا.
           </p>
