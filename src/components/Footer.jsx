@@ -32,10 +32,7 @@ function Footer() {
               <FaWhatsapp className="w-5 h-5 ml-2 text-green-500 lg:w-4 lg:h-4" />
               WhatsApp
             </a>
-            <p className="flex items-center justify-center lg:justify-start">
-              <FaMapMarkerAlt className="w-5 h-5 ml-2 text-red-500 lg:w-4 lg:h-4" />
-              العنوان: شارع الرئيسية
-            </p>
+           
             <a href="tel:+123456789" className="flex items-center justify-center lg:justify-start">
               <FaPhone className="w-5 h-5 ml-2 text-blue-500 lg:w-4 lg:h-4" />
               الهاتف: +123456789
