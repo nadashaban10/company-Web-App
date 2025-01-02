@@ -14,7 +14,7 @@ function Home() {
       <NavBar />
      <Hero />
      </div>
-     <div className='Floatingbuttons z-50 fixed bottom-[-4px] right-0 mb-4 mr-4 '>
+     <div className='Floatingbuttons z-40 fixed bottom-[-4px] right-0 mb-4 mr-4 '>
       <div className='whatsapp hover:bg-[#25D366] hover:text-white p-2 rounded-full icon-hover ' >
         <a href="https://wa.me/01156647497" target="_blank" rel="noreferrer">
           <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="whatsapp" />

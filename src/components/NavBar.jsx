@@ -95,7 +95,7 @@ function NavBar() {
       </div>
 
       <div
-        className={`smallmenu hero w-[400px] h-[100vh] left-0 fixed top-0 z-40 pt-5 text-white transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
+        className={`smallmenu hero w-full z-50 h-[100vh] left-0 fixed top-0 pt-5 text-white transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
         role="region"
         aria-labelledby="mobile-menu-section"
       >
