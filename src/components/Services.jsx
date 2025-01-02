@@ -74,7 +74,7 @@ function Services() {
         {/* Card 1 */}
         
         <motion.div
-          className="card bg-white shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl sm:h-[300px] h-[150px]"
+          className="card bg-white shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl sm:h-[300px] h-auto"
           variants={cardVariant}
           role="region"
           aria-labelledby="identity-design"
@@ -87,14 +87,14 @@ function Services() {
           <h2 id="identity-design" className="text-lg sm:text-2xl font-bold text-gray-600">
             تصميمات الهوية البصرية
           </h2>
-          <p className="hidden sm:block mt-2 sm:mt-4" aria-hidden="true">
+          <p className="block sm:block mt-2 sm:mt-4" aria-hidden="true">
             عرف عن نفسك بألوان مختارة وخطوط احترافية وأفكار واعية.
           </p>
       
         </motion.div>
         {/* Card 2 */}
         <motion.div
-          className="card bg-yellow-100 bg-opacity-[70%] shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl h-[150px] sm:h-[300px]"
+          className="card bg-yellow-100 bg-opacity-[70%] shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl h-auto sm:h-[300px]"
           variants={cardVariant}
           role="region"
           aria-labelledby="ecommerce-design"
@@ -107,14 +107,14 @@ function Services() {
           <h2 id="ecommerce-design" className="text-lg sm:text-2xl font-bold text-gray-600">
             تصميم المتاجر الإلكترونية
           </h2>
-          <p className="hidden sm:block mt-2 sm:mt-4" aria-hidden="true">
+          <p className="block sm:block mt-2 sm:mt-4" aria-hidden="true">
             الأختيار الأمثل لمن يبحث عن الأرباح الوفيرة.
           </p>
         </motion.div>
 
         {/* Card 3 */}
         <motion.div
-          className="card bg-gray-100 bg-opacity-[90%] shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl sm:h-[300px] h-[150px]"
+          className="card bg-gray-100 bg-opacity-[90%] shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl sm:h-[300px] h-auto"
           variants={cardVariant}
           role="region"
           aria-labelledby="mobile-app-design"
@@ -127,13 +127,13 @@ function Services() {
           <h2 id="mobile-app-design" className="text-lg sm:text-2xl font-bold text-gray-600">
             تصميم تطبيقات الجوال
           </h2>
-          <p className="hidden sm:block mt-2 sm:mt-4" aria-hidden="true">
+          <p className="block sm:block mt-2 sm:mt-4" aria-hidden="true">
             تواجد على مختلف أنظمة الجوالات وزيادة واضحة في عملائك.
           </p>
         </motion.div>
         
         <motion.div
-          className="card bg-green-100 bg-opacity-[90%] shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl sm:h-[300px] h-[150px]"
+          className="card bg-green-100 bg-opacity-[90%] shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl sm:h-[300px] h-auto"
           variants={cardVariant}
           role="region"
           aria-labelledby="tech-consulting"
@@ -146,7 +146,7 @@ function Services() {
           <h2 id="tech-consulting" className="text-lg sm:text-2xl font-bold text-gray-600">
             استشارات تقنيه
           </h2>
-          <p className="hidden sm:block mt-2 sm:mt-4" aria-hidden="true">
+          <p className="block sm:block mt-2 sm:mt-4" aria-hidden="true">
             نوفر استشارات تقنية للشركات والافراد للوصول الى افضل الحلول التقنية
           </p>
         </motion.div>
@@ -155,7 +155,7 @@ function Services() {
 
         {/* Card 5 */}
         <motion.div
-          className="card bg-red-100 bg-opacity-[70%] shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl sm:h-[300px] h-[150px]"
+          className="card bg-red-100 bg-opacity-[70%] shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl sm:h-[300px] h-auto"
           variants={cardVariant}
           role="region"
           aria-labelledby="maintenance"
@@ -168,7 +168,7 @@ function Services() {
           <h2 id="maintenance" className="text-lg sm:text-2xl font-bold text-gray-600">
             تحديث ومتابعه
           </h2>
-          <p className="hidden sm:block mt-2 sm:mt-4" aria-hidden="true">
+          <p className="block sm:block mt-2 sm:mt-4" aria-hidden="true">
             نوفر خدمات تحديث ومتابعه للمواقع والتطبيقات لضمان استمراريه العمل
           </p>
         </motion.div>
