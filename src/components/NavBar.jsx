@@ -4,6 +4,7 @@ import { FiPhoneCall } from 'react-icons/fi';
 import { FaBars } from 'react-icons/fa';
 import { IoIosCloseCircleOutline } from 'react-icons/io';
 import { Link as ScrollLink } from "react-scroll";
+import Logoo from '../images/logo.png';
 
 function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -35,13 +36,12 @@ function NavBar() {
         role="navigation"
         aria-label="Main Navigation"
       >
-        <div className="navbarLogo">
-          <h1
-            className={`text-4xl md:text-[23px] font-bold transition-all duration-300 mt-[-10px] ${isMobileMenuOpen ? "hidden" : "block"}`}
+        <div className="navbarLogo w-[40px] md:w-[50px] cursor-pointer" >
+          <img  src={Logoo} alt='logo'
+            className={`text-4xl md:text-[23px] font-bold transition-all duration-300 mt-[5px] mx-5 mb-2 ${isMobileMenuOpen ? "hidden" : "block"}`}
             aria-hidden={isMobileMenuOpen ? "true" : "false"}
-          >
-            Logo
-          </h1>
+          />
+         
         </div>
 
         <div className="navbarMenu text-2xl md:text-[20px] hidden md:flex">
@@ -101,9 +101,9 @@ function NavBar() {
       >
         <div className="flex flex-col">
           <div className="flex justify-between items-center px-4 py-2">
-            <h1 className="text-4xl font-bold pr-5" id="mobile-menu-section">
-              Logo
-            </h1>
+          <img src={Logoo} alt='logo' className='w-[45px] mx-5'
+             
+            />
             <IoIosCloseCircleOutline
               className="text-[45px] cursor-pointer"
               onClick={toggleMobileMenu}

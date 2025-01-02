@@ -58,7 +58,7 @@ function Articles() {
 
   return (
     <motion.div
-      className='articles flex flex-col items-start justify-center h-full w-[80%] mx-auto pb-[50px] mb-[120px]'
+      className='articles flex flex-col items-start justify-center h-full w-[80%] mx-auto pb-[50px] mb-[120px] mt-[50px]'
       id="articles"
       variants={listVariant}
       animate={isInView ? "animate" : "initial"}

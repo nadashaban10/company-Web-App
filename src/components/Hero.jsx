@@ -33,7 +33,7 @@ function Hero() {
       <div className="flex flex-col md:flex-row justify-between items-center sm:p-[50px] pt-[40px] px-5 h-[100%] text-white">
         {/* Text Section */}
         <div className="right w-full md:w-[55%] text-center md:text-right mt-7 md:mt-0">
-          <h2 className="text-4xl md:text-5xl font-semibold text-[#f5b225] mb-2">
+          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-2">
             مرحبا بكم في موقعنا
           </h2>
         
