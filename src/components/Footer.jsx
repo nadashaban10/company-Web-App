@@ -12,7 +12,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="footer text-white pb-5 pt-10">
+    <footer className="footer text-white pb-5 pt-10 mt-[70px]" id="about">
       <div className="container mx-auto flex flex-col space-y-10 lg:space-y-0 lg:flex-row lg:justify-between lg:items-start">
         
         {/* First Section: Logo and Description */}
@@ -67,7 +67,7 @@ function Footer() {
       </div>
 
       {/* Copyright Section */}
-      <div className="text-center text-sm text-white md:text-xl mt-10 bg-gray-400 bg-opacity-20 sm:w-[400px] w-[300px] flex justify-center items-center h-10 mx-auto rounded-full">
+      <div className="text-center text-sm text-white md:text-md mt-10 bg-gray-400 bg-opacity-20 sm:w-[250px] w-[250px] flex justify-center items-center h-10 mx-auto rounded-full">
         <p>&copy; {new Date().getFullYear()} جميع الحقوق محفوظة</p>
       </div>
     </footer>

@@ -1,7 +1,7 @@
 import React from 'react';
 import img1 from '../images/Web-Development.png';
-import img2 from '../images/Web-Development.png';
-import img3 from '../images/Web-Development.png';
+import img2 from '../images/web2.jpg';
+import img3 from '../images/web3.jpg';
 import { BsArrowDown } from 'react-icons/bs';
 import { IoEyeOutline } from 'react-icons/io5';
 import { motion } from "framer-motion";
@@ -36,7 +36,7 @@ function Articles() {
       title: 'تعرف على أساسيات تطوير الويب',
       description: 'مقال يتحدث عن أهم الخطوات لتعلم تطوير الويب وأساسيات العمل عليه لتحقيق نتائج احترافية في مشاريعك القادمة.',
       views: 120,
-      color: 'bg-red-500 bg-opacity-40'
+      color: 'bg-green-400 bg-opacity-40'
     },
     {
       id: 2,
@@ -45,7 +45,7 @@ function Articles() {
       title: 'أدوات وتقنيات حديثة في تصميم المواقع',
       description: 'نستعرض في هذا المقال أهم الأدوات والتقنيات التي تساعدك على تصميم مواقع تفاعلية وجذابة بأحدث الأساليب.',
       views: 85,
-      color: 'bg-blue-500 bg-opacity-40'
+      color: 'bg-blue-400 bg-opacity-40'
     },
     {
       id: 3,
@@ -54,12 +54,12 @@ function Articles() {
       title: 'كيفية تحسين أداء مواقع الويب',
       description: 'مقال متخصص في شرح طرق تحسين سرعة وأداء المواقع الإلكترونية للحصول على تجربة مستخدم أفضل.',
       views: 190,
-      color: 'bg-green-500 bg-opacity-40'
+      color: 'bg-red-300 bg-opacity-40'
     }
   ];
 
   return (
-    <motion.div className='articles flex flex-col items-start justify-center h-full w-[80%] mx-auto pb-[50px]'
+    <motion.div className='articles flex flex-col items-start justify-center h-full w-[80%] mx-auto pb-[50px] mb-[120px]' id="articles"
         variants={listVariant}
           animate={isInView ? "animate" : "initial"}
           ref={ref}>
@@ -69,10 +69,10 @@ function Articles() {
       </p>
       <div className='cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-7 justify-center mt-10 cursor-pointer'>
         {articles.map(article => (
-          <div key={article.id} className='card bg-white shadow-md rounded-3xl p-4 sm:p-6 text-right transform transition duration-300 hover:scale-105 hover:shadow-xl relative sm:h-[450px] h-[450px]'>
+          <div key={article.id} className='card bg-white shadow-md rounded-3xl p-3 sm:p-3 text-right transform transition duration-300 hover:scale-105 hover:shadow-xl relative sm:h-[450px] h-[450px]'>
          
             <div className='relative'>
-              <img src={article.img} alt={article.title} className='w-full h-40 object-cover rounded-md ' />
+              <img src={article.img} alt={article.title} className='w-full h-[200px] object-cover rounded-md ' />
               {/* Overlay Layer */}
               <div className={`absolute inset-0 rounded-md ${article.color}`}></div>
             </div>

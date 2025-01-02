@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import Contactimg from "../images/contact1.png";
+import Contactimg from "../images/Contact1.png";
 
 const listVariant = {
   initial: {

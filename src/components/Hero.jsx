@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import heroimage from "../images/heroimage.png";
 import Typed from "typed.js";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import animition from "../Animation2.json";
@@ -27,11 +26,11 @@ function Hero() {
   }, []);
 
   return (
-    <div className="w-full relative sm:pt-[50px] pt-[20px]">
+    <div className="w-full relative sm:pt-[50px] pt-[20px]" id="herosection">
       {/* Content Section */}
       <div className="flex flex-col md:flex-row justify-between items-center sm:p-[50px] pt-[40px] px-5 h-[100%] text-white">
         {/* Text Section */}
-        <div className="right w-full md:w-[55%] text-center md:text-right mt-8 md:mt-0">
+        <div className="right w-full md:w-[55%] text-center md:text-right mt-7 md:mt-0">
           <h2 className="text-4xl md:text-5xl font-semibold text-[#f5b225] mb-2">
             مرحبا بكم في موقعنا
           </h2>
@@ -39,7 +38,7 @@ function Hero() {
           <h1 className="text-2xl md:text-3xl sm:text-4xl font-bold text-[#f5b225] pr-1">
             <span className="typed"></span> {/* Dynamic text will appear here */}
           </h1>
-          <p className="text-xl sm:text-3xl md:text-xl mt-4">
+          <p className="text-xl sm:text-3xl md:text-xl mt-3">
             موقعنا يقدم لكم افضل الخدمات فنحن نضع سنوات خبراتنا بين يديك لنساعدك كشركاء نجاح.
           </p>
           <button className="text-white px-4 py-2 rounded-full sm:mt-4 text-xl font-bold mt-5 border border-[#f5b225] sm:w-[180px] w-[200px] h-[50px] hover:bg-[#f5b225] hover:text-black">
