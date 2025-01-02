@@ -38,7 +38,7 @@ function NavBar() {
       >
         <div className="navbarLogo w-[170px] md:w-[170px] cursor-pointer mt-1" >
           <img  src={Logoo} alt='logo'
-            className={`text-4xl md:text-[23px] font-bold transition-all duration-300 mt-[5px] mx-5 mb-2 ${isMobileMenuOpen ? "hidden" : "block"}`}
+            className={`text-4xl md:text-[23px] font-bold transition-all duration-300 mt-[5px] mx-2 mb-2 ${isMobileMenuOpen ? "hidden" : "block"}`}
             aria-hidden={isMobileMenuOpen ? "true" : "false"}
           />
          
