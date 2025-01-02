@@ -31,7 +31,7 @@ function NavBar() {
   return (
     <>
       <div
-        className={`navbar flex justify-between items-center sm:py-0 py-[50px] text-white sm:pt-[60px] px-[50px] md:px-[20px] transition-all duration-300 ${isNavbarFixed ? "fixed sm:top-[-30px] top-0 sm:pb-[20px] p-2 z-30 left-0 w-full hero shadow-lg " : "relative"}`}
+        className={`navbar flex justify-between items-center sm:py-0 py-[30px] text-white sm:pt-[60px] px-[50px] md:px-[20px] transition-all duration-300 ${isNavbarFixed ? "fixed sm:top-[-30px] top-0 sm:pb-[20px] p-2 z-30 left-0 w-full hero shadow-lg " : "relative"}`}
         role="navigation"
         aria-label="Main Navigation"
       >
