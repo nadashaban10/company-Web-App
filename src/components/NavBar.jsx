@@ -4,7 +4,7 @@ import { FiPhoneCall } from 'react-icons/fi';
 import { FaBars } from 'react-icons/fa';
 import { IoIosCloseCircleOutline } from 'react-icons/io';
 import { Link as ScrollLink } from "react-scroll";
-import Logoo from '../images/logo.png';
+import Logoo from '../images/Logo.png';
 
 function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
