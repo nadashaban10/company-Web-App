@@ -18,7 +18,7 @@ function Footer() {
         
         {/* First Section: Logo and Description */}
         <div className="w-full text-center lg:w-1/3 lg:mr-[20px] lg:text-right flex flex-col items-center lg:items-start">
-         <img  src={Logoo} alt='logo' className='w-[120px] md:w-[100px]'/>
+         <img  src={Logoo} alt='logo' className='w-[170px] md:w-[170px]'/>
           <p className="sm:text-sm leading-loose px-4 lg:px-0 text-center lg:text-right md:text-lg lg:text-sm">
             وعي استثنائي برغبتك في الحصول على خدمة فريدة عبر فريق عمل من المحترفين. نقدم خدمات متكاملة مثل استضافة المواقع، الدعم الفني، الإدارة، تصميم المتاجر، والتسويق الإلكتروني وبالتأكيد تصميم الهوية التجارية وبرمجة تطبيقات الجوال والمواقع الإلكترونية. كل هذا بإحترافية يشهد عليها عملائنا.
           </p>
