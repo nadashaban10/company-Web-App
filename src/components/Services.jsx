@@ -92,28 +92,7 @@ function Services() {
         باقة مميزة من الخدمات المختارة
       </motion.p>
 
-      {/* Circle Pattern Section */}
-      <div
-        className="flex flex-col items-start absolute bottom-[-190px] right-[-40px] "
-        style={{ transform: "rotate(-90deg)" }}
-      >
-        {[...Array(4)].map((_, rowIndex) => {
-          const circleCount = rowIndex + 1; // Start with 1 circle and increment per row
-          return (
-            <div
-              key={rowIndex}
-              className="flex flex-row items-center space-x-2 space-x-reverse mb-4"
-            >
-              {[...Array(circleCount)].map((_, circleIndex) => (
-                <React.Fragment key={circleIndex}>
-                  <div className="w-6 h-6 rounded-full bg-gray-300 opacity-[20%]"></div>
-                  <div className="w-4 h-4 rounded-full bg-gray-300 opacity-[20%]"></div>
-                </React.Fragment>
-              ))}
-            </div>
-          );
-        })}
-      </div>
+     
 
       <motion.div
         className="cards grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 justify-center mt-10 cursor-pointer"
