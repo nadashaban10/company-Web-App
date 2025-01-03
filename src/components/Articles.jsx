@@ -109,15 +109,7 @@ function Articles() {
             >
               {article.description}
             </p>
-            <div
-              className='flex items-center text-[rgba(38,89,97,1)] justify-center gap-2 absolute bottom-4 font-semibold left-3 w-[180px] px-4 py-2 bg-gray-200 text-center rounded-full hover:bg-[#266157] hover:text-white'
-              aria-label={`View more about ${article.title}`}
-            >
-              <button className=''>
-                عرض المزيد
-              </button>
-              <BsArrowDown className='rotate-90 text-lg mt-1 ' />
-            </div>
+           
           </div>
         ))}
       </div>
