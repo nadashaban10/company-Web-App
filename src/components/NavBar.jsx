@@ -32,13 +32,13 @@ function NavBar() {
   return (
     <>
       <div
-        className={`navbar flex justify-between items-center sm:py-0 py-[20px] text-white sm:pt-[60px] px-[20px] md:px-[20px] transition-all duration-300 ${isNavbarFixed ? "fixed sm:top-[-30px] top-0 sm:pb-[20px] p-2 z-30 left-0 w-full hero shadow-lg " : "relative"}`}
+        className={`navbar flex justify-between items-center sm:py-0 py-[10px] text-white sm:pt-[60px] px-[20px] md:px-[20px] transition-all duration-300 ${isNavbarFixed ? "fixed sm:top-[-30px] top-0 sm:pb-[20px] p-2 z-30 left-0 w-full hero shadow-lg " : "relative"}`}
         role="navigation"
         aria-label="Main Navigation"
       >
         <div className="navbarLogo w-[170px] md:w-[170px] cursor-pointer mt-1" >
           <img  src={Logoo} alt='logo'
-            className={`text-4xl md:text-[23px] font-bold transition-all duration-300 mt-[5px] mx-2 mb-2 ${isMobileMenuOpen ? "hidden" : "block"}`}
+            className={`text-4xl md:text-[23px] font-bold transition-all duration-300 my-[1px] mx-1 ${isMobileMenuOpen ? "hidden" : "block"}`}
             aria-hidden={isMobileMenuOpen ? "true" : "false"}
           />
          
