@@ -44,7 +44,7 @@ body {
 .cardsHover:hover {
   
   transform: translateY(-10px) scale(1.05); /* Smooth lift effect */
-  box-shadow: rgba(8,4,82) 0px 10px 30px; /* Bottom shadow with greater depth */
+  box-shadow: rgb(38,89,97) 0px 10px 10px; /* Bottom shadow with greater depth */
   background-color: rgba(255, 255, 255, 0.9); /* Slightly lighter background on hover */
   rotate: 0.33deg;
   cursor: pointer;

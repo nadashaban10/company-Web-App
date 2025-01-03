@@ -3,15 +3,12 @@ import { FaArrowLeft } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import img1 from "../images/5.png";
-import img2 from "../images/3.png";
+
 import img3 from "../images/2.png";
-import img4 from "../images/1.png";
-import img5 from "../images/4.png";
 import img6 from "../images/mobileApp2.jpeg";
 import img7 from "../images/mobileApp.jpeg";
 import img8 from "../images/mobileApp3.jpeg";
-import img9 from "../images/web.jpeg";
+
 
 const containerVariant = {
   initial: {},
@@ -59,66 +56,33 @@ function Work() {
   const projects = [
     {
       id: 1,
-      name: "مشروع 1",
+      name: "اطياف النكهات",
       description: "هذا هو وصف المشروع الأول",
-      image: img1,
+      image: img3,
       category: "تطوير الويب",
+      linkproject: "https://atyaf-flavors.com.sa/",
     },
     {
       id: 2,
-      name: "مشروع 2",
-      description: "هذا هو وصف المشروع الثاني",
-      image: img2,
-      category: "تصميم الهويات",
-    },
-    {
-      id: 3,
-      name: "مشروع 3",
-      description: "هذا هو وصف المشروع الثالث",
-      image: img3,
-      category: "تطبيقات الجوال",
-    },
-    {
-      id: 4,
-      name: "مشروع 4",
-      description: "هذا هو وصف المشروع الرابع",
-      image: img4,
-    },
-    {
-      id: 5,
-      name: "مشروع 5",
-      description: "هذا هو وصف المشروع الخامس",
-      image: img5,
-      category: "تصميم الهويات",
-    },
-    {
-      id: 6,
-      name: "مشروع 6",
+      name: "WiShare",
       description: "هذا هو وصف المشروع السادس",
       image: img6,
       category: "تطبيقات الجوال",
     },
     {
-      id: 7,
-      name: "مشروع 7",
+      id: 2,
+      name: "whatsapp direct message" ,
       description: "هذا هو وصف المشروع السابع",
       image: img7,
       category: "تطبيقات الجوال",
     },
     {
-      id: 8,
-      name: "مشروع 8",
-      description: "هذا هو وصف المشروع الثامن",
+      id: 3,
+      name: " وصل",
       image: img8,
       category: "تطبيقات الجوال",
     },
-    {
-      id: 9,
-      name: "مشروع 9",
-      description: "هذا هو وصف المشروع التاسع",
-      image: img9,
-      category: "تطوير الويب",
-    },
+   
   ];
 
   const buttons = [
@@ -210,13 +174,18 @@ function Work() {
               key={project.id}
               className="group rounded-3xl shadow-md cardsHover relative p-3"
               variants={cardVariant}
+              onClick={() => {
+                if (project.linkproject) {
+                  window.open(project.linkproject, "_blank");
+                }
+              }}
             >
               <img
                 src={project.image}
                 alt={project.name}
                 className="w-full h-40 object-cover rounded-md"
               />
-              <div className="absolute left-0 right-0 bottom-0 text-lg font-bold text-white bg-[rgba(8,4,82,0.4)] px-5 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-3xl">
+              <div className="absolute left-0 right-0 bottom-0 text-lg font-bold text-white bg-[rgb(38,89,97,0.8)] px-5 py-3  rounded-b-3xl">
                 <h2>{project.name}</h2>
                 <button className="flex items-center space-x-3">
                   <span className="font-normal">مشاهدة تفاصيل العمل</span>

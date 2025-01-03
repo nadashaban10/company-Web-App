@@ -160,7 +160,7 @@ const Contact = () => {
               />
             </div>
 
-            <div className="mb-6 relative">
+            <div className="mb-6 relative hidden">
               <select
                 value={gender}
                 onChange={(e) => setGender(e.target.value)}
