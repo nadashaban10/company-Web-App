@@ -9,7 +9,8 @@ body {
   background: rgb(38,89,97);
   background: linear-gradient(0deg, rgba(38,89,97,1) 1%, rgba(23,56,61,1) 44%, rgba(68,116,124,1) 100%);
  }
- 
+
+
  .waves {
   position:relative;
   width: 100%;

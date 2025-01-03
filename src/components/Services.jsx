@@ -14,6 +14,7 @@ const containerVariant = {
     },
   },
 };
+
 const textVariant = {
   initial: {
     opacity: 0,
@@ -28,6 +29,7 @@ const textVariant = {
     },
   },
 };
+
 const cardVariant = {
   initial: {
     opacity: 0,
@@ -40,6 +42,28 @@ const cardVariant = {
     },
   },
 };
+
+// Circle Pattern Component
+const CirclePattern = () => (
+  <div className="flex flex-col items-start relative">
+    {/* Circle Pattern Section */}
+    <div className="flex flex-col items-start absolute right-[0px] top-[15px] sm:right-[35px] sm:top-[15px]  rotate-[-90deg] ">
+      {[...Array(4)].map((_, rowIndex) => {
+        const circleCount = 4 - rowIndex * 1; // Decreasing by 2 circles per row
+        return (
+          <div key={rowIndex} className="flex flex-row items-center space-x-2 space-x-reverse mb-4">
+            {[...Array(circleCount)].map((_, circleIndex) => (
+              <React.Fragment key={circleIndex}>
+                <div className="sm:w-6 sm:h-6 w-3 h-3 rounded-full bg-gray-300 opacity-[15%]"></div>
+                <div className="sm:w-4 sm:h-4 w-2 h-2 rounded-full bg-gray-300 opacity-[15%]"></div>
+              </React.Fragment>
+            ))}
+          </div>
+        );
+      })}
+    </div>
+  </div>
+);
 
 function Services() {
   const ref = useRef();
@@ -67,19 +91,42 @@ function Services() {
       >
         باقة مميزة من الخدمات المختارة
       </motion.p>
+
+      {/* Circle Pattern Section */}
+      <div
+        className="flex flex-col items-start absolute bottom-[-190px] right-[-40px] "
+        style={{ transform: "rotate(-90deg)" }}
+      >
+        {[...Array(4)].map((_, rowIndex) => {
+          const circleCount = rowIndex + 1; // Start with 1 circle and increment per row
+          return (
+            <div
+              key={rowIndex}
+              className="flex flex-row items-center space-x-2 space-x-reverse mb-4"
+            >
+              {[...Array(circleCount)].map((_, circleIndex) => (
+                <React.Fragment key={circleIndex}>
+                  <div className="w-6 h-6 rounded-full bg-gray-300 opacity-[20%]"></div>
+                  <div className="w-4 h-4 rounded-full bg-gray-300 opacity-[20%]"></div>
+                </React.Fragment>
+              ))}
+            </div>
+          );
+        })}
+      </div>
+
       <motion.div
         className="cards grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 justify-center mt-10 cursor-pointer"
         variants={containerVariant}
       >
         {/* Card 1 */}
-        
         <motion.div
-          className="card bg-white shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl sm:h-[300px] h-auto"
+          className="card bg-white shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl sm:h-[300px] h-auto "
           variants={cardVariant}
           role="region"
           aria-labelledby="identity-design"
         >
-              <div className="backgroundshape"></div>
+          <CirclePattern />
           <FaPalette
             className="text-blue-500 text-4xl sm:text-6xl mx-auto mb-2 sm:mb-4"
             aria-label="Palette Icon"
@@ -90,8 +137,8 @@ function Services() {
           <p className="block sm:block mt-2 sm:mt-4" aria-hidden="true">
             عرف عن نفسك بألوان مختارة وخطوط احترافية وأفكار واعية.
           </p>
-      
         </motion.div>
+
         {/* Card 2 */}
         <motion.div
           className="card bg-yellow-100 bg-opacity-[70%] shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl h-auto sm:h-[300px]"
@@ -99,7 +146,7 @@ function Services() {
           role="region"
           aria-labelledby="ecommerce-design"
         >
-                <div className="backgroundshape"></div>
+          <CirclePattern />
           <FaStore
             className="text-yellow-500 text-4xl sm:text-6xl mx-auto mb-2 sm:mb-4"
             aria-label="Store Icon"
@@ -119,7 +166,7 @@ function Services() {
           role="region"
           aria-labelledby="mobile-app-design"
         >
-                <div className="backgroundshape"></div>
+          <CirclePattern />
           <FaMobileAlt
             className="text-green-500 text-4xl sm:text-6xl mx-auto mb-2 sm:mb-4"
             aria-label="Mobile Icon"
@@ -131,14 +178,15 @@ function Services() {
             تواجد على مختلف أنظمة الجوالات وزيادة واضحة في عملائك.
           </p>
         </motion.div>
-        
+
+        {/* Card 4 */}
         <motion.div
           className="card bg-green-100 bg-opacity-[90%] shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl sm:h-[300px] h-auto"
           variants={cardVariant}
           role="region"
           aria-labelledby="tech-consulting"
         >
-                <div className="backgroundshape"></div>
+          <CirclePattern />
           <TbReportSearch
             className="text-black text-4xl sm:text-6xl mx-auto mb-2 sm:mb-4"
             aria-label="Search Icon"
@@ -151,8 +199,6 @@ function Services() {
           </p>
         </motion.div>
 
-        
-
         {/* Card 5 */}
         <motion.div
           className="card bg-red-100 bg-opacity-[70%] shadow-md rounded-3xl p-4 sm:p-6 text-center transform transition duration-300 hover:scale-105 hover:shadow-xl sm:h-[300px] h-auto"
@@ -160,7 +206,7 @@ function Services() {
           role="region"
           aria-labelledby="maintenance"
         >
-                <div className="backgroundshape"></div>
+          <CirclePattern />
           <CiSettings
             className="text-red-500 text-4xl sm:text-6xl mx-auto mb-2 sm:mb-4"
             aria-label="Settings Icon"
