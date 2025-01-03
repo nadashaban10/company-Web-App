@@ -158,7 +158,7 @@ function Work() {
   </g>
 </svg>
       <motion.div
-        className="flex flex-col items-center justify-center h-auto w-full mx-auto pb-[50px] bg-[#E7EEFB] py-[50px] px-[20px] sm:px-[100px] mb-[0px] sm:mb-[10px]"
+        className="flex flex-col items-center justify-center h-auto w-full mx-auto pb-[50px] bg-[#E7EEFB] py-[50px] px-[20px] sm:px-[100px] mb-[0px] sm:mb-[10px] mt-[50px]"
         variants={containerVariant}
         animate={isInView ? "animate" : "initial"}
         ref={ref}
@@ -187,7 +187,7 @@ function Work() {
           {buttons.map((button, index) => (
             <motion.button
               key={index}
-              className={`px-4 py-2 rounded-full w-full sm:w-[170px] mb-2 sm:mb-0 ${
+              className={`px-4 py-2 rounded-full w-[150px] sm:w-[170px] mb-2 sm:mb-0 ml-[5px]  ${
                 activeButton === button
                   ? "bg-yellow-500 text-white"
                   : "border border-gray-500 text-gray-700 hover:bg-yellow-500 hover:text-white hover:border-none bg-white"
