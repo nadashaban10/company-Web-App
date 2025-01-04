@@ -37,7 +37,7 @@ function Hero() {
             <div key={rowIndex} className="flex flex-row items-center space-x-2 mb-4">
               {[...Array(circleCount)].map((_, circleIndex) => (
                 <React.Fragment key={circleIndex}>
-                  <div className="w-6 h-6 rounded-full bg-gray-100 opacity-[10%]"></div>
+                  <div className="w-6 h-6 rounded-full bg-gray-100 opacity-[5%]"></div>
                   <div className="w-4 h-4 rounded-full bg-gray-100 opacity-[10%]"></div>
                 </React.Fragment>
               ))}
@@ -49,7 +49,7 @@ function Hero() {
       {/* Content Section */}
       <div className="flex flex-col md:flex-row justify-between items-center sm:p-[50px] pt-[40px] px-5 h-[100%] text-white">
         {/* Text Section */}
-        <div className="right w-full md:w-[55%] text-center md:text-right mr-5 mt-7 md:mt-5">
+        <div className="right w-full md:w-[55%] text-center md:text-right mr-0  mt-[60px] md:mt-5">
           <h2 className="text-4xl md:text-5xl font-semibold text-white mb-2">
             مرحبا بكم في موقعنا
           </h2>
