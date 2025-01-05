@@ -50,14 +50,14 @@ function Hero() {
       <div className="flex flex-col md:flex-row justify-between items-center sm:p-[50px] pt-[40px] px-5 h-[100%] text-white">
         {/* Text Section */}
         <div className="right w-full md:w-[50%] text-center md:text-right mr-0 sm:mr-5 mt-[60px] md:mt-5">
-          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-2">
-            مرحبا بكم في موقعنا
-          </h2>
+          <h1 className="text-4xl md:text-5xl font-semibold text-white mb-2">
+            مرحباً بكم في موقعنا
+          </h1>
 
           {/* Typing Animation */}
-          <h1 className="text-2xl md:text-3xl sm:text-4xl font-bold text-[#f5b225] pr-1 space-y-2">
+          <h2 className="text-2xl md:text-3xl sm:text-4xl font-bold text-[#f5b225] pr-1 space-y-2">
             <span className="typed text-shadow-md"></span>
-          </h1>
+          </h2>
           <p className="text-xl sm:text-3xl md:text-xl mt-3">
             موقعنا يقدم لكم افضل الخدمات فنحن نضع سنوات خبراتنا بين يديك لنساعدك كشركاء نجاح.
           </p>

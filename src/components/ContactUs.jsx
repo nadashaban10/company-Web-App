@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { useInView } from "framer-motion";
-import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
+import { FaUser, FaEnvelope } from "react-icons/fa";
 import Contactimg from "../images/Contact1.png";
 import RegistrationPopup from "./RegisterPopup";
 
@@ -90,6 +90,9 @@ const Contact = () => {
           animate={isInView ? "animate" : "initial"}
           ref={ref}
           src={Contactimg}
+          loading="lazy"
+          height={500}
+          width={500}
           alt="اتصل بنا"
           className="rounded-xl w-[600px] pt-[90px] h-auto pr-10"
           role="img"
@@ -100,9 +103,9 @@ const Contact = () => {
       {/* Form Section */}
       <div className="leftSection flex items-center justify-center flex-1 mt-5 px-5 sm:w-[95%] md:w-[85%] mx-auto w-[100%]">
         <div className="w-full flex flex-col gap-5 bg-gray-50 bg-opacity-[90%] p-12 rounded-xl">
-          <h1 className="cTitle text-3xl font-bold text-[rgba(38,89,97,1)]">
+          <h2 className="cTitle text-3xl font-bold text-[rgba(38,89,97,1)]">
              تواصل معنا!
-          </h1>
+          </h2>
           
           {/* Error message */}
           {error && <p className="text-red-500 text-center">{error}</p>}

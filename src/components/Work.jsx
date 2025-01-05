@@ -129,12 +129,12 @@ function Work() {
       >
         {/* Header Section */}
         <div>
-          <motion.h1
+          <motion.h2
             className="text-3xl font-bold text-yellow-500 text-center"
             variants={buttonVariant}
           >
             أعمالنا
-          </motion.h1>
+          </motion.h2>
           <motion.p
             className="text-xl mt-2 text-center text-gray-400"
             variants={buttonVariant}
@@ -183,7 +183,10 @@ function Work() {
               <img
                 src={project.image}
                 alt={project.name}
-                className="w-full h-40 object-cover rounded-md"
+                title={project.name}
+                loading="lazy"
+                width="300"
+                height="200"
               />
               <div className="absolute left-0 right-0 bottom-0 text-lg font-bold text-white bg-[rgb(38,89,97,0.8)] px-5 py-3  rounded-b-3xl">
                 <h2>{project.name}</h2>

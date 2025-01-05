@@ -78,12 +78,12 @@ function Services() {
       ref={ref}
     >
       {/* Animate h1 */}
-      <motion.h1
+      <motion.h2
         className="text-3xl font-bold text-yellow-500 pt-4"
         variants={textVariant}
       >
         خدماتنا
-      </motion.h1>
+      </motion.h2>
       {/* Animate p */}
       <motion.p
         className="text-2xl mt-2 text-right text-gray-400"

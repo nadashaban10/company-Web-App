@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import img1 from '../images/Web-Development.png';
 import img2 from '../images/web2.jpg';
 import img3 from '../images/web3.jpg';
-import { BsArrowDown } from 'react-icons/bs';
 import { IoEyeOutline } from 'react-icons/io5';
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -58,7 +57,7 @@ function Articles() {
 
   return (
     <motion.div
-      className='articles flex flex-col items-start justify-center h-full w-[80%] mx-auto pb-[50px] mb-[120px] mt-[50px]'
+      className='articles flex flex-col items-start justify-center h-full w-[80%] mx-auto pb-[50px] mb-[10px] mt-[50px]'
       id="articles"
       variants={listVariant}
       animate={isInView ? "animate" : "initial"}
@@ -84,10 +83,17 @@ function Articles() {
           >
             <div className='relative'>
               <img
-                src={article.img}
-                alt={`Image for article: ${article.title}`}
-                className='w-full h-[200px] object-cover rounded-md'
-              />
+             src={article.img}
+             alt={article.title}
+              loading="lazy"
+              width="full"
+              height="200px"
+              className='w-full h-[200px] object-cover rounded'
+            />
+  
+             
+          
+           
               <div className={`absolute inset-0 rounded-md ${article.color}`}></div>
             </div>
             <h2

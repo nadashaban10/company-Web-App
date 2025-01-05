@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   FaWhatsapp,
-  FaMapMarkerAlt,
   FaPhone,
   FaEnvelope,
   FaFacebook,
@@ -18,7 +17,8 @@ function Footer() {
         
         {/* First Section: Logo and Description */}
         <div className="w-full text-center lg:w-1/3 lg:mr-[20px] lg:text-right flex flex-col items-center lg:items-start">
-         <img  src={Logoo} alt='logo' className='w-[170px] md:w-[170px]'/>
+        <img  src={Logoo} alt='logo' loading='lazy'
+          width={170} height={170} className='w-[170px] md:w-[170px]'/>
           <p className="sm:text-sm leading-loose px-4 lg:px-0 text-center lg:text-right md:text-lg lg:text-sm">
             وعي استثنائي برغبتك في الحصول على خدمة فريدة عبر فريق عمل من المحترفين. نقدم خدمات متكاملة مثل استضافة المواقع، الدعم الفني، الإدارة، تصميم المتاجر، والتسويق الإلكتروني وبالتأكيد تصميم الهوية التجارية وبرمجة تطبيقات الجوال والمواقع الإلكترونية. كل هذا بإحترافية يشهد عليها عملائنا.
           </p>
@@ -26,7 +26,7 @@ function Footer() {
 
         {/* Second Section: Contact Information */}
         <div className="w-full text-center lg:w-1/4 lg:mr-[150px] lg:text-left flex flex-col items-center lg:items-start space-y-5">
-          <h3 className="text-lg md:text-2xl font-bold lg:text-sm">معلومات التواصل</h3>
+          <h2 className="text-lg md:text-2xl font-bold lg:text-sm">معلومات التواصل</h2>
           <div className="space-y-3 md:text-xl lg:text-sm">
             <a href="https://wa.me/your-number" className="flex items-center justify-center lg:justify-start">
               <FaWhatsapp className="w-5 h-5 ml-2 text-green-500 lg:w-4 lg:h-4" />

@@ -37,7 +37,8 @@ function NavBar() {
         aria-label="Main Navigation"
       >
         <div className="navbarLogo w-[170px] md:w-[170px] cursor-pointer mt-1" >
-          <img  src={Logoo} alt='logo'
+          <img  src={Logoo} alt='logo' loading='lazy'
+          width={170} height={170}
             className={`text-4xl md:text-[23px] font-bold transition-all duration-300 my-[1px] mx-1 ${isMobileMenuOpen ? "hidden" : "block"}`}
             aria-hidden={isMobileMenuOpen ? "true" : "false"}
           />
@@ -95,13 +96,16 @@ function NavBar() {
       </div>
 
       <div
-        className={`smallmenu hero w-full z-50 h-[100vh] left-0 fixed top-0 pt-5 text-white transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
+        className={`smallmenu hero w-full z-50 h-[100vh] left-0 fixed top-0 pt-8 text-white transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
         role="region"
         aria-labelledby="mobile-menu-section"
       >
         <div className="flex flex-col">
-          <div className="flex justify-between items-center px-4 py-2">
-          <img src={Logoo} alt='logo' className='w-[170px] mx-5'
+          <div className="flex justify-between items-center px-4 py-2 ">
+          <img 
+          width={170} height={170}
+          loading='lazy'
+          src={Logoo} alt='logo' className='w-[170px] mx-5 '
              
             />
             <IoIosCloseCircleOutline
